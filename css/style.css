@@ -1,1 +1,73 @@
+h1 {
+    text-align: center;
+}
 
+.cardapio {
+    margin: 0em 2em;
+}
+
+p {
+    border: solid 2px;
+    background-color: lightgray;
+    padding: 2.5em 1em 1em 1em;
+
+}
+
+.chicken {
+    background-color: salmon;
+    outline: solid 2px;
+    position: absolute;
+    margin-left: -1em;
+    margin-top: -2.5em;
+    padding: 5px 0 5px;
+    width: 6em;
+    text-align: center;
+    
+}
+
+.beef {
+    background-color: tomato;
+    outline: solid 2px;
+    position: absolute;
+    margin-left: -1em;
+    margin-top: -2.5em;
+    padding: 5px 0 5px;
+    width: 6em;
+    text-align: center;
+}
+
+.sushi {
+    background-color: lightyellow;
+    outline: solid 2px;
+    position: absolute;
+    margin-left: -1em;
+    margin-top: -2.5em;
+    padding: 5px 0 5px;
+    width: 6em;
+    text-align: center;
+
+}
+
+.artigoUm, .artigoDois, .artigoTres {
+    margin: 1em;
+}
+
+/*tablet*/
+@media only screen and (min-width: 768px) {
+    .cardapio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  
+    .artigoTres{
+	grid-column: span 2;
+    }
+}
+
+/*monitor*/
+@media only screen and (min-width: 992px) {
+
+    .cardapio {
+        display: flex;
+    }
+  }
