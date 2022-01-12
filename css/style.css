@@ -15,36 +15,32 @@ p {
 
 .chicken {
     background-color: salmon;
-    outline: solid 2px;
-    position: absolute;
-    margin-left: -1em;
-    margin-top: -2.5em;
+    border: solid 2px;
+    position: relative;
     padding: 5px 0 5px;
-    width: 6em;
+    width: 8em;
     text-align: center;
-    
+    float: right; 
 }
 
 .beef {
     background-color: tomato;
-    outline: solid 2px;
-    position: absolute;
-    margin-left: -1em;
-    margin-top: -2.5em;
+    border: solid 2px;
+    position: relative;
     padding: 5px 0 5px;
-    width: 6em;
+    width: 8em;
     text-align: center;
+    float: right; 
 }
 
 .sushi {
     background-color: lightyellow;
-    outline: solid 2px;
-    position: absolute;
-    margin-left: -1em;
-    margin-top: -2.5em;
+    border: solid 2px;
+    position: relative;
     padding: 5px 0 5px;
-    width: 6em;
+    width: 8em;
     text-align: center;
+    float: right; 
 
 }
 
@@ -62,6 +58,9 @@ p {
     .artigoTres{
 	grid-column: span 2;
     }
+    .chicken, .beef, .sushi {
+        margin-top: 1em;   
+    }
 }
 
 /*monitor*/
@@ -69,5 +68,8 @@ p {
 
     .cardapio {
         display: flex;
+    }
+    .chicken, .beef, .sushi {
+        margin-top: 1em;   
     }
   }
